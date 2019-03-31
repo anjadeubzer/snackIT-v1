@@ -105,6 +105,17 @@ include __DIR__ . '/lib/user_admin_columns.php';
 /***********************************
  * 7. Plugins Settings Page
  *
+ * a) create snack groups
+ * b) ... more soon
+ *
+ *
+ ***********************************/
+
+include __DIR__ . '/lib/settings.php';
+
+/***********************************
+ * 7. Plugins Settings Page
+ *
  * a) number of bought snacks
  * b) ranking
  *

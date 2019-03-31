@@ -88,37 +88,3 @@ function create_custom_taxonomy_snack() {
 
 // Populate Custom Taxonomy on plugin install
 
-
-function snack_plugin_install() {
-
-	$snack_groups = array(
-		'DrinkMe!',
-
-		'SoftDrink',
-		'HipsterDrink',
-		'EnergyDrink',
-		'Beer',
-		'Dairy',
-		'Water',
-		'Tea',
-		'SugarFree',
-
-		'EatMe!',
-
-		'Soup',
-		'Cereals',
-		'CerealBars',
-		'Nuts',
-		'Sweets',
-		'Chocolate',
-		'Organic',
-	);
-
-	foreach ( (array) $snack_groups as $snack_group ) {
-		$term = term_exists( $snack_group, 'snack_groups' );
-		if ( $term == 0 || $term == null ) {
-			wp_insert_term( $snack_group, 'snack_groups' );
-		}
-	}
-}
-register_activation_hook(__FILE__, 'snack_plugin_install');
