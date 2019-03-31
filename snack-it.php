@@ -102,6 +102,7 @@ include __DIR__ . '/lib/register_user_meta.php';
 include __DIR__ . '/lib/user_admin_columns.php';
 
 
+
 /***********************************
  * 7. Plugins Settings Page
  *
@@ -113,11 +114,13 @@ include __DIR__ . '/lib/user_admin_columns.php';
 
 include __DIR__ . '/lib/settings.php';
 
+
+
 /***********************************
- * 7. Plugins Settings Page
+ * 8. User Overview page - snack columns
  *
- * a) number of bought snacks
- * b) ranking
+ * a) balance
+ * b) link to purchase history
  *
  *
  ***********************************/

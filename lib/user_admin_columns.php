@@ -1,9 +1,9 @@
 <?php
 /***********************************
- * 7. Plugins Settings Page
+ * 8. User Overview page - snack columns
  *
- * a) number of bought snacks
- * b) ranking
+ * a) balance
+ * b) link to purchase history
  *
  *
  ***********************************/
