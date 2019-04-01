@@ -52,12 +52,4 @@ function register_snack_meta() {
 		'object_subtype' => 'snack',
 	) );
 
-	register_meta( 'post', 'snack_active', array(
-		'show_in_rest' => true,
-		'single' => true,
-		'type' => 'boolean',
-		'description' => 'Show on Frontend',
-		'object_subtype' => 'snack',
-	) );
-
 }

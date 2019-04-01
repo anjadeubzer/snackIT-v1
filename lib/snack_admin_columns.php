@@ -22,7 +22,7 @@ function snackit_set_custom_snack_columns($columns) {
 
 	$columns = array(
 		'cb' => $columns['cb'],
-		'image' => __( 'Image' ),
+		'featured_image' => __( 'Image' ),
 		'title' => __( 'Title' ),
 		'snack_price' => __( 'Price', 'snackit' ),
 		'snack_size' => __( 'Size', 'snackit' ),
@@ -40,11 +40,15 @@ function snackit_custom_snack_column( $column, $post_id ) {
 	switch ( $column ) {
 
 		case 'snack_price' :
-			echo get_post_meta( $post_id , 'snack_price' , true );
+			echo get_post_meta( $post_id , 'snack_price' , true ) . ' cents';
 			break;
 
 		case 'snack_size' :
 			echo get_post_meta( $post_id , 'snack_size' , true );
+			break;
+
+		case 'featured_image':
+			the_post_thumbnail( array(60, 60) );
 			break;
 
 	}

@@ -13,6 +13,7 @@ add_action( 'init', 'create_post_type_snack' );
 add_action( 'init', 'create_custom_taxonomy_snack', 0 );
 
 
+
 function create_post_type_snack() {
 
 	$labels = array(
@@ -36,6 +37,7 @@ function create_post_type_snack() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
+		'menu_icon'          => 'dashicons-carrot',
 		'show_in_rest'       => true,
 		'template' => array(
 			array( 'snackit/snack-meta' ),
@@ -48,14 +50,6 @@ function create_post_type_snack() {
 	register_post_type( 'snack', $args );
 }
 
-//function myplugin_register_template() {
-//	$post_type_object = get_post_type_object( 'snack' );
-//	$post_type_object->template = array(
-//		array( 'snackit/snack-meta' ),
-//	);
-//	$post_type_object->template_lock = 'all';
-//}
-//add_action( 'init', 'myplugin_register_template' );
 
 
 function create_custom_taxonomy_snack() {
@@ -84,7 +78,3 @@ function create_custom_taxonomy_snack() {
 
 	register_taxonomy( 'snack_groups', 'snack', $args );
 }
-
-
-// Populate Custom Taxonomy on plugin install
-
