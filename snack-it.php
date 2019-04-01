@@ -38,6 +38,12 @@ if ( ! function_exists( 'register_block_type' ) ) {
 
 include __DIR__ . '/lib/create_post_type_snack.php';
 
+/***********************************
+ * 1b. The Custom Post Type 'snack_purchase' for the SnackIT app
+ ***********************************/
+
+include __DIR__ . '/lib/create_post_type_purchase.php';
+
 
 
 
@@ -61,6 +67,7 @@ include __DIR__ . '/lib/gutenberg_block_snack.php';
  ***********************************/
 
 include __DIR__ . '/lib/register_snack_meta.php';
+include __DIR__ . '/lib/register_snack_purchase_meta.php';
 
 
 

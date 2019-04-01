@@ -42,12 +42,13 @@ function add_balance_to_userprofile( $user ) {    ?>
 		</tr>
 	</table>
 <?php }
+
 function save_custom_userprofile_fields( $user_id ) {
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return FALSE;
-	update_usermeta( $user_id, 'company_name', $_POST['company_name'] );
-	update_usermeta( $user_id, 'user_phone', $_POST['user_balance'] );
+	update_user_meta( $user_id, 'user_balance', $_POST['user_balance'] );
 }
+
 add_action( 'show_user_profile', 'add_balance_to_userprofile' );
 add_action( 'edit_user_profile', 'add_balance_to_userprofile');
 add_action( 'personal_options_update', 'save_custom_userprofile_fields' );
