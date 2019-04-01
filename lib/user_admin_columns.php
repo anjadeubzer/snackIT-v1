@@ -35,7 +35,7 @@ function add_user_column_data( $val, $column_name, $user_id ) {
 			break;
 
 		case 'purchase_history' :
-			return '<a href="">Link to purchase history</a>';
+			return '<a href="/wp-admin/edit.php?post_type=snack_purchase&author=' . $user_id . '">Purchase history</a>';
 			break;
 
 
