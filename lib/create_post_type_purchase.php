@@ -38,10 +38,10 @@ function create_post_type_purchase() {
 		// no creation through wordpress admin - only through the react app
 		'capability_type'    => 'post',
 //		'capabilities' => array(
-//			'create_posts' => 'administrator',
+////			'create_posts' => 'administrator',
 //			'create_posts' => false,
 //		),
-		'map_meta_cap' => true, // Set to `false`, if users are not allowed to edit/delete existing posts
+//		'map_meta_cap' => true, // Set to `false`, if users are not allowed to edit/delete existing posts
 
 		'hierarchical'       => false,
 		'menu_position'      => null,

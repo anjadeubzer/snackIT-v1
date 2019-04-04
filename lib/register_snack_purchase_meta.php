@@ -40,7 +40,7 @@ function register_snack_purchase_meta() {
 		'show_in_rest' => true,
 		'single' => true,
 		'type' => 'boolean',
-		'description' => 'Show on Frontend',
+		'description' => 'Have you paid it or not',
 		'object_subtype' => 'snack_purchase',
 	) );
 

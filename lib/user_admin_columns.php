@@ -19,7 +19,7 @@ function snackit_add_user_column($columns) {
 		'name'     => __( 'Name' ),
 		'email'    => __( 'E-mail' ),
 		'role'     => __( 'Role' ),
-		'posts'    => __( 'Posts' ),
+//		'posts'    => __( 'Posts' ),
 		'purchase_history' => __('Einkäufe'),
 		'user_balance' => __('Balance'),
 	);
