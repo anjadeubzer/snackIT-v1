@@ -4,14 +4,19 @@
 
 ###This plugin installs:
 
-1. A SnackIT block
-2. A custom post type 'snacks'
-3. A custom taxonomy 'snack_groups'
+1. A SnackIT block insode of 
+2. A custom post type 'snack'
+3. A custom taxonomy 'snack_group'
+2. A custom post type 'purchase'
 4. Some settings for the REST API
+4. Some settings to manage the purchases easier
 
-It was created for the https://javascriptforwp.com/ Hackathon 2019
+The data is pulled from a React SPA that shows all the snacks and 
+gives you the possibility to buy one.
 
-Find our Project here : [https://snack-it-headless.netlify.com](https://snack-it-headless.netlify.co)
+Find the GIT Frontend Project here (Authentication included): 
+https://github.com/anjadeubzer/snackIT-v1-react-app/tree/Authentication
+
 
 ### Install & Develop
 
