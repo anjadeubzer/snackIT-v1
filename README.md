@@ -1,8 +1,8 @@
-# SnackIT-V1 Plugin
+# SnackIT-V1 Plugin for WordPress
 
 ![Screenshot of block installed showing the title setting](http://anjadeubzer.de/images/snack-block.png)
 
-###This plugin installs:
+### This plugin installs:
 
 1. A SnackIT block insode of 
 2. A custom post type 'snack'
